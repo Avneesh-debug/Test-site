@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fun interactive webpage">
+    <title>You're BDSK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling */
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLui-Qj_Wfgs5L2srykPuEEreNdloy_ae1Tg&s');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container styling */
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Heading styling */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        /* Button styling */
+        button {
+            padding: 10px 25px;
+            font-size: 1.2em;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #e68a00;
+            transform: scale(1.1);
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        /* Animation for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            button {
+                font-size: 1em;
+                padding: 8px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Reetesh, You Are BDSK</h1>
+        <p>Do you agree?</p>
+        <button onclick="showMessage()">Yes, I’m</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert('Yes, you are BDSK! 🎉');
+        }
+    </script>
+</body>
+</html>
